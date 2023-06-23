@@ -1,0 +1,63 @@
+* {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    border-right: 1px solid rgb(40, 40, 40);
+    width: 18vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+#tabs {
+    text-align: center;
+    list-style: none;    
+}
+
+#tabs li {
+    width: 18vw;
+    padding-block: 5px;
+    margin-block: 5px;
+    transition: 0.25s;
+}
+
+#tabs li:hover {
+    background-color: rgb(201, 201, 201);
+    border-right: 1px solid black;
+}
+
+#tabs a {
+    text-decoration: none;
+}
+
+main {
+    position: relative;
+    top: 0;
+    left: 18vw;
+}
+
+header {
+    height: 100px;
+    padding-left: 5vw;
+    border-bottom: 1px solid rgb(40, 40, 40);
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+
