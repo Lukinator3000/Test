@@ -8,6 +8,8 @@
 
 body {
     background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 nav {
@@ -18,27 +20,48 @@ nav {
     top: 0;
     left: 0;
     background-color: whitesmoke;
+    display: flexbox;
+}
+
+#logo {
+    width: 18vw;
+    margin-top: 10px;
+    margin-bottom: 15vh;
     display: flex;
+    justify-content: center;
+}
+
+#logo img {
+    width: 16vw;
 }
 
 #tabs {
     text-align: center;
-    list-style: none;    
+    list-style: none;  
+    position: relative;  
 }
 
 #tabs li {
     width: 18vw;
-    padding-block: 5px;
-    margin-block: 5px;
+    padding-block: 0.5vh;
+    margin-block: 1vh;
     transition: 0.25s;
 }
 
 #tabs li:hover {
     background-color: rgb(201, 201, 201);
     border-right: 1px solid black;
+    box-shadow: 0px 2px 3px grey;
+}
+
+#tabs li:active {
+    background-color: rgb(166, 166, 166);
+    box-shadow: 0px 0px 3px grey;
 }
 
 #tabs a {
+    color: black;
+    font-size: 2vw;
     text-decoration: none;
 }
 
@@ -50,8 +73,10 @@ main {
 
 header {
     height: 100px;
+    background-color: rgba(201, 220, 142, 0.516);
     padding-left: 5vw;
     border-bottom: 1px solid rgb(40, 40, 40);
+    box-shadow: 1px 3px 12px rgb(229, 229, 229);
     display: flex;
     align-items: center;
 }
@@ -60,4 +85,24 @@ h1 {
     font-size: 42px;
 }
 
+h2 {
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
 
+article {
+    font-size: 20px;
+    padding-top: 6vh;
+    padding-left: 8vw;
+    padding-right: 26vw;
+}
+
+#pdf {
+    width: 66vw;
+    height: 75vh;
+    box-shadow: 0px 0px 5px rgb(149, 149, 149);
+}
+
+.indent {
+    margin-left: 1vw;
+}
