@@ -26,9 +26,29 @@
     </nav>
     <main>
         <header>
-            <h1></h1>
+            <h1>Angular Tips</h1>
         </header>
         <article>
+            <p><span class="bold">Angular</span> is a component-based webapp development platform that uses TypeScript code. It provides a clean app development structure that includes beneficial features to test applications and reduce code repitition.</p>
+            <br>
+            <p>After installing Angular with Node, you can create an Angular project with the following command to your terminal:</p>
+            <div class="sample">
+                <p>ng new [project-name]</p>
+            </div>
+            <br>
+            <h3>Components</h3>
+            <section class="indent">
+                <p>Components are the building blocks in Angular. They're essentially files that code for custom-made HTML elements to add into the HTML code of your webapp. You can make a component either manually by creating a TypeScript file named "[course-name].component.ts" or inputting the following command into the terminal:</p>
+                <div class="sample">
+                    <p>ng g c [course-name]</p>
+                </div>
+                <br>
+                <p>Every component file includes an import of "Component" from @angular/cli, a main exportable TypeScript class that codes for the functionality of the component, and a @Component decorator that specifies the selector name, HTML code template, and optional CSS of the component.</p>
+                <br>
+                <p>Here's an example of a base component file:</p>
+                <img src="exampleComponent.png" alt="Image of a code snippet for a componet called 'Yay'" id="compCode">
+                <p>- {{}}, or double curly brackets, allow for string interpolation in Components</p>
+            </section>
         </article>
     </main>
 

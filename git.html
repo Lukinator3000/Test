@@ -26,9 +26,60 @@
     </nav>
     <main>
         <header>
-            <h1></h1>
+            <h1>Git & GitHub Tips</h1>
         </header>
         <article>
+            <p><span class="bold">Git</span> is a open source version control system utilized to track file version changes over time to facilitate code testing and collaboration.</p>
+            <br>
+            <p><span class="bold">GitHub</span> is a cloud-based hosting service for Git repositories that lets you work on project from different devices.</p>
+            <br>
+            <p>Using the two together, you can easily make, test, save, and manage files in a local repository and send them to a remote repository online for other devices to access.</p>
+            <br>
+            <h3>Important Git Commands</h3>
+            <section class="indent">
+                <div class="sample">
+                    <p>git init</p>
+                </div>
+                <p>- Initializes the current folder as a project for git to track</p><br>
+                <div class="sample">
+                    <p>git add .</p>
+                </div>
+                <p>- Stages new or modified files in local repository, allowing those files to be committed (if you want to stage a specific file, replace . with the file name)</p><br>
+                <div class="sample">
+                    <p>git status</p>
+                </div>
+                <p>- Checks to see what files are staged if any</p><br>
+                <div class="sample">
+                    <p>git commit -m "[message]"</p>
+                </div>
+                <p>- Commits (saves) staged files, making them able to be pushed to a GitHub repository (also with a commit message in quotation marks)</p><br>
+                <div class="sample">
+                    <p>git remote add origin https://github.com/[username]/[repository-name]</p>
+                </div>
+                <p>- Connects the local repository with the remote GitHub repository using a GitHub link (in the form of the url above)</p><br>
+                <div class="sample">
+                    <p>git branch -M main</p>
+                </div>
+                <p>- Changes main branch name to "main"</p><br>
+                <div class="sample">
+                    <p>git push -u commit [branch-name]</p>
+                </div>
+                <p>- Pushes committed files of current branch to the connected GitHub repository</p><br>
+                <div class="sample">
+                    <p>git checkout -b [new-branch-name]</p>
+                </div>
+                <p>- Creates a new branch in the repository with the name replacing [new-branch-name] and goes to that branch</p><br>
+                <div class="sample">
+                    <p>git checkout [branch-name]</p>
+                </div>
+                <p>- Switches branch to the one named in [branch-name]</p><br>
+                <div class="sample">
+                    <p>git merge [branch-name]</p>
+                </div>
+                <p>- Combines additional branch and its file changes with main branch</p><br>
+            </section>
+            <a href="https://github.com/Lukinator3000/Test" target="_blank"><img src="./github-logo.png" alt="GitHub Logo" id="ghLogo"></a>
+            <br><br>
         </article>
     </main>
 
